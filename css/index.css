@@ -1,0 +1,86 @@
+/* Todo va en el sentido de las agujas del reloj */
+
+* /* all */ {
+    margin: 15;
+    /* margin: 0 10 15 25; */ /* arriba top, derecha right, abajo button, izq left */
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.header {
+    background-color: aliceblue;
+    color: rgb(228, 22, 167);
+    padding: 0.5em 3em; /* right, left */
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row /* Viene en row por defecto */ 
+}
+    
+    /* Como acomodar los contenidos */
+    /* justify-content: flex-end; a la derecha */
+    /* justify-content: flex-start; a la izquierda */
+    /* justify-content: center; centrado  */
+    /* justify-content: space-between; espacio entre */
+    /* justify-content: space-around; */ 
+
+/* Un contenedor hijo tambien puede ser un contenedor padre*/
+.logo {
+    width: 30%;
+    align-self: auto;
+} 
+
+.navbar ul /* De este modo busca a uno de sus elementos hijos, en este caso ul */ {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar ul li {
+   padding: auto;
+   margin: 20px; 
+}
+
+a {
+   text-decoration: none;
+}
+
+.banner {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.primero {
+    background-color: red;
+}
+
+.segundo {
+    background-color: green;
+}
+
+.tercero {
+    background-color: blue;
+}
+
+img {
+    width: 100%;
+}
+
+article {
+    margin: 10px;
+}
+
+.footer {
+    display: flex;
+    background-color: rgb(197, 125, 125);
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Media Querys */
